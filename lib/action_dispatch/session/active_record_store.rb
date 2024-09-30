@@ -142,7 +142,7 @@ module ActionDispatch
       end
 
       def logger
-        ActiveRecord::Base.logger || ActiveRecord::SessionStore::NilLogger
+        ActiveRecord::SessionStore::NilLogger
       end
     end
   end
